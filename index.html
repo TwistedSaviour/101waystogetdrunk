@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+  <head>
+    <title>101 Ways to get drunk</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+      	var load_screen = document.getElementById("load_screen");
+      document.body.removeChild(load_screen);
+        });
+    </script>		
+</head>
+  <body>
+    <div id="load_screen">
+      <div id="loading">
+		<p class="load_p"><strong>Loading</strong></p>
+        <img class="load" src="img/loading.gif" alt="2 cocktail shakers being shaken">
+		<p><strong>101 Ways to get drunk</strong>
+		<br> Please drink responsibly
+		</p>
+      </div>
+    </div>
+    <section class="ageScreen">
+      <div class="container">
+        <div class="row">
+          <h1>Are you legal?</h1>
+          <div class="col-sm-6 col-md-6 col-lg-6 ">	
+            <button class="button1" type="button"  data-toggle="modal" data-target="#ageVerification">I <strong>AM</strong> 18+</button>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 ">	
+            <button class="button2" type="button" onclick="window.location.href = 'https://en.teletubbies.com';">I am <strong>NOT</strong> 18</button>
+          </div>
+        </div>
+        <!--end ROW-->
+      </div>
+      <!--end CONTAINER-->
+    </section>
+    <!--end SECTION-->
+    <!--ageVerification Modal-->
+    <div class="modal fade" id="ageVerification" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal1 content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Age Verification</h4>
+          </div>
+          <!--end MODAL HEADER-->
+          <div class="modal-body">
+            <div class="frame-container container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>Sorry to be a pain but please confirm your date of birth</h4>
+                  <form action="home.html" method="post" name="age_form">
+                    Day :	
+                    <select name="day">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                      <option>23</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>27</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                    </select>
+                    Month : 
+                    <select name="month">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                    Year : 
+                    <select name="year">
+                      <option>2002</option>
+                      <option>2001</option>
+                      <option>2000</option>
+                      <option>1999</option>
+                      <option>1998</option>
+                      <option>1997</option>
+                      <option>1996</option>
+                      <option>1995</option>
+                      <option>1994</option>
+                      <option>1993</option>
+                      <option>1992</option>
+                      <option>1991</option>
+                      <option>1990</option>
+                      <option>1989</option>
+                      <option>1988</option>
+                      <option>1987</option>
+                      <option>1986</option>
+                      <option>1985</option>
+                      <option>1984</option>
+                      <option>1983</option>
+                      <option>1982</option>
+                      <option>1981</option>
+                      <option>1980</option>
+                      <option>1979</option>
+                      <option>1978</option>
+                    </select>
+                    <input type="submit" name="senddate" value="Go" onClick="return checkAge()">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <p> </p>
+          </div>
+          <!--end MODAL BODY-->
+        </div>
+      </div>
+    </div>
+    <!-- end ageVerification MODAL-->	
+  </body>
+</html>
