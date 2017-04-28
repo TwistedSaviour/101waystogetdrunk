@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>101 Ways to get drunk | Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+      	var load_screen = document.getElementById("load_screen");
+      	document.body.removeChild(load_screen);
+      });
+    </script>
+</head>
+  <body>
+    <div id="load_screen">
+      <div id="loading">
+		<p class="load_p"><strong>Loading</strong></p>
+		<img class="load" src="img/loading.gif" alt="2 cocktail shakers being shaken">
+		<p><strong>101 Ways to get drunk</strong>
+		<br> Please drink responsibly
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="egg"></div>
+      <div id="egg2">
+      </div>
+      <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">101 Ways to get drunk</a>
+          <h2 class="view">Best viewed in landscape if on mobile</h2>
+          <button class="codes hidden-xs hidden-sm">Cheat codes</button>
+        </div>
+        <div id="codePanel">
+			<p>Konami Code - Up, Up, Down, Down, Left, Right, Left, Right, B, A ( ↑, ↑, ↓, ↓, ←, →, ←, →, B, A )
+			<br>
+			Mortal Kombat Kode - Down, Up, Left, Left, A, Right, Down ( ↓, ↑, ←, ←, A, →, ↓ )
+			</p>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="search-section">
+          <div class="row">
+            <!--Search Results Area-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 right">
+              <h3 class="search_h2 stealth">Search</h3>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <form id="ingredientSearch">
+                  <label class="stealth" for="searchterm">Search by ingredients<input type="text" id="searchterm" name="search" placeholder="Search by Ingredient"></label>        
+                  <label class="stealth2" for="submitBTN">Search button<input type="submit" value="Search" id="submitBTN"></label>
+                </form>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <form id="drinkSearch">
+                  <label class="stealth" for="searchterm2">Search by drink name<input type="text" id="searchterm2" name="search" placeholder="Search Drink Name"></label> 
+                  <label class="stealth2" for="submitBTN2">Search button<input type="submit" value="Search" id="submitBTN2" ></label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="results-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3 class="search_h2 stealth">Results</h3>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  resultsbox well well1">
+                <h2 class="results_h2">Results By Ingredient </h2>
+                <div class="card-container">
+                  <ul class="ingredientCard">
+                    <li class="card"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 resultsbox2 well well2">
+                <h2 class="results_h2">Results By Name </h2>
+                <div class="card-container">
+                  <ul class="drinkCard">
+                    <li class="card"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <p>Copyright&copy; 2017 | Team McPickle <br>  
+          <button class="codes show-xs hidden-md hidden-lg ">Cheat codes</button>
+          <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA"><img src="https://achecker.ca/images/icon_W2_aa.jpg" alt="WCAG 2.0 (Level AA)" height="32" width="102" /></a>
+        </p>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/cheet.js"></script>
+    <script src="js/nothingToSeeHere.js"></script>
+    <noscript>Please enable JavaScript in order to get drunk. </noscript>
+  </body>
+</html>
